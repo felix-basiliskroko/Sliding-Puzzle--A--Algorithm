@@ -14,13 +14,13 @@ def manhattan_dist(state: list, fin_state: list):
 
 def return_move_direction(p_state: list, i_state: list):
     if p_state[0][1][1] > i_state[0][1][1] and p_state[0][1][0] == i_state[0][1][0]:
-        return 'U'
+        return 'DOWN'
     elif p_state[0][1][1] < i_state[0][1][1] and p_state[0][1][0] == i_state[0][1][0]:
-        return 'O'
+        return 'UP'
     elif p_state[0][1][1] == i_state[0][1][1] and p_state[0][1][0] > i_state[0][1][0]:
-        return 'L'
+        return 'LEFT'
     elif p_state[0][1][1] == i_state[0][1][1] and p_state[0][1][0] < i_state[0][1][0]:
-        return 'R'
+        return 'RIGHT'
     else:  # should never get to here
         return None
 
