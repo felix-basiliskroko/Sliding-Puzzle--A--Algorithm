@@ -1,2 +1,3 @@
 # Sliding Puzzle: A* Algorithm
- The implementation uses my implementation of the A*-Algorithm to solve a given sliding puzzle
+The project uses my implementation of the A*-Algorithm to solve a given sliding puzzle. The implementation uses the manhattan distance as the heuristic function. The class 'Node' stores the state of a given puzzle, g (the amount of steps it took to get to this position), h (heuristic value calculated with manhattan distance), f (g+h) as well as prev_node (the node from which the state of the current node originated). 
+Each state of the puzzle is stored a list of dictionaries, where the key for each of the 9 dictionaries is the number of the tile and the value the cartesian coordinates of the tile. (0, 0) is located in the bottom left corner of the puzzle. The tile 0 represents the empty field.
